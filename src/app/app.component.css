@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+.fondo{
+  background: white;
+  padding: 2%;
+  margin-top: 5%;
+  max-height: 600px;
+}
+
+
+.box{
+  border-style: dashed;
+  padding-bottom: 3%;
+  overflow-y: auto;
+  max-height: 200px;
+}

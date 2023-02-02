@@ -1,0 +1,16 @@
+#persona{
+  border-color: rgb(173, 151, 103);
+  border-style: ridge;
+  border-radius: 5px;
+  background-color:  rgb(173, 151, 103);
+  color:rgb(0, 0, 0);
+  padding-right: 2%;
+
+
+}
+
+.texto{
+  margin-left: 1%;;
+}
+
+

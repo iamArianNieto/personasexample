@@ -1,0 +1,47 @@
+<div class="fondo">
+<form class="form-row row">
+  <div class="form-group col-md-2">
+    <label for="nombre" class="sr-only">Nombre</label>
+    <input type="text" name="nombre" id="nombre" placeholder="Nombre"  class="form-control"
+    #nombreRef [(ngModel)]="nombreM"
+    >
+  </div>
+  <div class="form-group col-md-2">
+    <label for="apellido" class="sr-only">Apellido</label>
+    <input type="text" name="apellido" id="apellido" placeholder="Apellido"  class="form-control"
+    #apellidoRef [(ngModel)]="apellidoM"
+    >
+  </div>
+  <div class="col">
+    <br>
+    <button type="submit" class="btn btn-primary" (click)="agregarPersona()">
+      Agregar
+    </button>
+    <button type="submit" class="btn btn-secondary" (click)="LimpiarPersona()" style="margin-left: 4%;">
+      Limpiar
+    </button>
+
+
+  </div>
+
+</form>
+</div>
+
+
+<div class="modal" tabindex="-1" id="myDialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Agregar Persona</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="cerrar()"></button>
+      </div>
+      <div class="modal-body">
+        <p>{{ texto_modal }}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="cerrar()">Cerrar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
