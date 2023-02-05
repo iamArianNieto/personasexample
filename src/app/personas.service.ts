@@ -22,7 +22,7 @@ export class personasService{
 
   quitaPersona(i:number){
 
-    this.personas.splice(-2,i-1);
+    this.personas.splice(i-1,1);
 
     this.LoggingService.enviaMensajeAConsola("eliminamos persona: "+i)
 

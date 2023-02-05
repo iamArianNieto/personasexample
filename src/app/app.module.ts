@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { PersonaComponent } from './persona/persona.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { personasService } from './personas.service';
+import { ComponentNameComponent } from './component-name/component-name.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PersonaComponent,
-    FormularioComponent
+    FormularioComponent,
+    ComponentNameComponent
   ],
   imports: [
     BrowserModule,FormsModule
